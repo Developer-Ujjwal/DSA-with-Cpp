@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 int find(vector<int>& parent,int x){
-    return parent[x]= (parent[x]==x)?x:find(parent,parent[x]);
+    return parent[x]= (parent[x]==x)?x:find(parent,parent[x]); //this method returns which group x belongs to
 }
 
 void Union(vector<int> &parent,vector<int> &rank,int x,int y){
